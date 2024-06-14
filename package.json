@@ -1,0 +1,22 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "npm run client --prefix FrontEnd",
+    "start:backend": "npm start --prefix BackEnd",
+    "start:App": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "react-redux": "^9.1.2"
+  }
+}
