@@ -6,7 +6,7 @@ import {
 import axios from "axios";
 
 const todoAdapter = createEntityAdapter({
-  selectId: (todo) => todo?._id,
+  selectId: (todo) => todo?._id || todo.updatedTodo._id,
   sortComparer: (a, b) => {
     const ADate = new Date(a.updatedAt || a.createdAt);
     const BDate = new Date(b.updatedAt || b.createdAt);

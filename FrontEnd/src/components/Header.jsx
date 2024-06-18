@@ -66,15 +66,8 @@ function Header() {
           className="rounded-lg p-2 bg-blue-400 opacity-70"
           onChange={(e) => setTodoStatus(e.target.value)}
         >
-          <option value="" disabled={true} className="text-center opacity-70">
-            Select
-          </option>
-          <option value="0" className="opacity-70">
-            Pending
-          </option>
-          <option value="1" className="opacity-70">
-            Done
-          </option>
+          <option value="0">Pending</option>
+          <option value="1">Done</option>
         </select>
         <button
           onClick={AddTodo}
